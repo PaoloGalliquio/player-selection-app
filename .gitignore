@@ -1,3 +1,9 @@
+.idea
+.vscode
+
+# SonarQube
+.scannerwork/
+
 # Logs
 logs
 *.log

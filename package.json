@@ -1,0 +1,32 @@
+{
+  "name": "sample-nodejs-test",
+  "version": "1.0.0",
+  "description": "NodeJs sample test",
+  "scripts": {
+    "test": "jest -i --forceExit ",
+    "single-test": "./node_modules/.bin/jest --runTestsByPath -i --forceExit  __tests__/listPlayer.test.js",
+    "start": "babel-node ./src/index.js",
+    "dev": "nodemon npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^28.0.2",
+    "jest": "^28.0.2",
+    "nodemon": "^3.1.4",
+    "supertest": "^6.2.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.3.0",
+    "sample-nodejs-test": "file:",
+    "sequelize": "^6.17.0",
+    "sqlite3": "^5.0.2"
+  }
+}
